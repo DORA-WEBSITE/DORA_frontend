@@ -7,12 +7,12 @@ const GivingBack = () => {
     <div className="flex flex-col gap-4 mb-4">
       <div className="font-poppins">
         <img
-          className="[height:504px] object-cover"
+          className="h-[504px] w-full object-cover"
           src={mainBuilding}
           alt=""
         />
-        <div className="absolute [height:504px] inset-0 bg-[#0B0B0B] opacity-[69%]"></div>
-        <div className="flex flex-col gap-8 absolute inset-0 items-center justify-center">
+        <div className="absolute h-[504px] inset-0 bg-[#0B0B0B] opacity-[69%]"></div>
+        <div className="flex flex-col h-[504px] gap-8 absolute inset-0 z-10 items-center justify-center">
           <div className="text-white font-extrabold text-5xl">GIVING BACK</div>
           <div className="text-center text-white text-2xl font-semibold w-[642px]">
             "Giving back to continue to grow together and raise the tradition of
@@ -28,7 +28,7 @@ const GivingBack = () => {
       </div>
 
       <div className="flex gap-4 mx-8 font-poppins justify-around">
-        <div className="w-6/12 bg-[#223551] text-white text-justify px-12 py-8 text-lg line leading-10">
+        <div className="w-6/12 bg-[#223551] text-white text-justify px-12 py-8 text-lg line leading-8">
           <p className="text-3xl font-semibold mb-4">WHY GIVE BACK?</p>
           <div className="bg-white [height:3px] mb-2"></div>
           <p>
@@ -39,7 +39,7 @@ const GivingBack = () => {
             domains and will directly benefit and/or create opportunities for
             programmes like:
           </p>
-          <l>
+          <ul className="list-disc ml-4">
             <li>
               Running scholarships and awards for needy and deserving students
               as well as award recognition for notable alumni to promote the
@@ -53,14 +53,14 @@ const GivingBack = () => {
               To bridge the student - faculty ratio to facilitate interactive
               world-class learning.
             </li>
-          </l>
+          </ul>
         </div>
 
         <div className="w-5/12 border-s shadow-2xl py-10 px-12 bg-white">
           <p className="text-2xl font-bold mb-4 text-[#183059]">
             Important Links
           </p>
-          <div className="[height:3px] bg-[#183059] w-1/2 mb-14"></div>
+          <div className="[height:3px] bg-[#183059] w-1/2 mb-8"></div>
           <ul className="flex-col flex gap-6">
             <a href="">
               <div className="flex justify-between">
@@ -119,13 +119,18 @@ const GivingBack = () => {
         </div>
       </div>
 
-      <div className="[height:388px] bg-[#223551] text-white font-poppins px-12 py-6">
+      <div className="[min-height:388px] bg-[#223551] text-white font-poppins px-12 py-6">
         <div>
           <div className="text-4xl font-extrabold">BENEFITS</div>
           <div className="bg-white [height:3px] w-40"></div>
         </div>
-        <div className="flex gap-12 mt-4">
-          <div className="ml-4 text-lg text-justify">
+        <div className="mt-4 text-wrap">
+          <img
+            className="w-1/3 h-auto ml-4 mb-4 mt-2 float-right"
+            src={BenefitsImage}
+            alt=""
+          />
+          <p className="ml-4 text-lg text-justify">
             "All the donations made to IIT Roorkee are 100% deductible from
             total taxable income u/s 80G of the Income Tax Act 1961 and may be
             used to support a wide variety of schemes. The options to choose
@@ -137,12 +142,12 @@ const GivingBack = () => {
             offers naming opportunities on making infrastructural donation.
             Moreover, the donation doesn't necessarily have to be as per one of
             the schemes, any small, general purpose donations are acceptable."
-          </div>
-          <img className="w-[396px]" src={BenefitsImage} alt="" />
+          </p>
+          <div className="clear-both"></div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 justify-center items-center [height:336px] bg-[#223551] text-white font-poppins px-16 py-6">
+      <div className="flex flex-col gap-8 justify-center items-center [min-height:336px] bg-[#223551] text-white font-poppins px-16 py-6">
         <div className="text-lg text-justify">
           Convenience of the donors is taken care of at each step, with multiple
           payment options including provision for online donations , demand
