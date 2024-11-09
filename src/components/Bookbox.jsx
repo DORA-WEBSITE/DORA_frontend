@@ -11,7 +11,7 @@ const BookBox = ({ title, description, imgSrc, imgDescription }) => {
       
       <div className="h-[514px] w-[780px] flex flex-col justify-center bg-gray-300 p-5 box-border">
         <h3 className="font-bold text-3xl mb-8 bg-gray-300 text-black">{title}</h3>
-        <p className="font-normal text-lg leading-6 text-black bg-gray-300">{description}</p> 
+        <p className="font-normal text-sm leading-6 text-black bg-gray-300">{description}</p> 
       </div>
       
       
