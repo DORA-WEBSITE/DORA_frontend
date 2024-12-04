@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";  // Import Navbar
 import Header from "./components/Header";  // Import Header
 import GivingBack from "./pages/GivingBack";
+import Dora_Office from "./pages/Dora_Office";
 import Home from "./pages/Home";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/givingback' element={<GivingBack />} />
+        <Route path='/dora_office' element={<Dora_Office />} />
       </Routes>
  
       <Footer />
