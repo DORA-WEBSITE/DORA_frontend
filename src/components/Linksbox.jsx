@@ -9,7 +9,7 @@ import { LinkCard2 } from './LinkCard';
 const data1 = [
     {
         id: 1,
-        url: '',
+        url: 'https://iitrdora.iitr.ac.in/news/ypages/iitrdf.html',
         logo: 'IITRDF',
         img: '',
         title1: 'IIT Roorkee',
@@ -76,7 +76,7 @@ const data2 = [
     },
     {
         id: 5,
-        url: '',
+        url: 'https://iitrdora.iitr.ac.in/news/ypages/IITRDcsr.html',
         title1: 'IITRDF-CSR',
         title2: '',
         arrow: `${arrow}`

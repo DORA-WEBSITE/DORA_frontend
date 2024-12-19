@@ -1,4 +1,4 @@
-import BookBox from "../components/BookBox"; 
+import BookBox from "../components/Bookbox"; 
 import book1 from "../assets/images/book1.png";
 import book2 from "../assets/images/book2.png";
 import book3 from "../assets/images/book3.png";
