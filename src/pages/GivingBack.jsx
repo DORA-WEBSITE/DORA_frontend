@@ -20,7 +20,9 @@ const GivingBack = () => {
           </div>
           <a
             className="bg-[#183059] rounded-3xl text-white text-2xl font-semibold px-6 py-2"
-            href=""
+            href="https://iitrdora.iitr.ac.in/donors/info.php"
+            target="_blank" 
+            rel="noopener noreferrer" 
           >
             Donate Now
           </a>
@@ -62,21 +64,21 @@ const GivingBack = () => {
           </p>
           <div className="[height:3px] bg-[#183059] w-1/2 mb-8"></div>
           <ul className="flex-col flex gap-6">
-            <a href="">
+            <a href="https://iitrdora.iitr.ac.in/givingbacknew/giving.php" target="_blank">
               <div className="flex justify-between">
                 <div className="text-lg text-[#183059]">Scheme</div>
                 <div className="text-2xl text-[#A1A1A1]">{">"}</div>
               </div>
               <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
             </a>
-            <a href="">
+            <a href="/topdonors">
               <div className="flex justify-between">
                 <div className="text-lg text-[#183059]">Esteemed Donors</div>
                 <div className="text-2xl text-[#A1A1A1]">{">"}</div>
               </div>
               <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
             </a>
-            <a href="">
+            <a href="/Givingbackcta">
               <div className="flex justify-between">
                 <div className="text-lg text-[#183059]">
                   Giving back to IITR
@@ -85,7 +87,7 @@ const GivingBack = () => {
               </div>
               <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
             </a>
-            <a href="">
+            <a href="https://alumni.iitr.ac.in/media/website/media/Foreign_Contribution_Act.pdf" target="_blank">
               <div className="flex justify-between">
                 <div className="text-lg text-[#183059]">
                   Foreign Contribution Regulation Act
@@ -94,21 +96,21 @@ const GivingBack = () => {
               </div>
               <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
             </a>
-            <a href="">
+            <a href="https://iitrdora.iitr.ac.in/donors/csr.php" target="_blank">
               <div className="flex justify-between">
                 <div className="text-lg text-[#183059]">CSR Contribution</div>
                 <div className="text-2xl text-[#A1A1A1]">{">"}</div>
               </div>
               <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
             </a>
-            <a href="">
+            <a href="https://alumni.iitr.ac.in/media/website/media/Tax_Exemption.pdf" target="_blank">
               <div className="flex justify-between">
                 <div className="text-lg text-[#183059]">Tax Exemption</div>
                 <div className="text-2xl text-[#A1A1A1]">{">"}</div>
               </div>
               <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
             </a>
-            <a href="">
+            <a href="https://iitrdora.iitr.ac.in/donors/Avenues.php">
               <div className="flex justify-between">
                 <div className="text-lg text-[#183059]">Avenues for Alumni</div>
                 <div className="text-2xl text-[#A1A1A1]">{">"}</div>

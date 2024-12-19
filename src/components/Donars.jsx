@@ -1,33 +1,25 @@
-import donar from '../assets/images/donar.png';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
+import axios from 'axios';
 
+const Donars = () => {
+    const [donors, setDonors] = useState([]);
 
-const data = [
-    {
-        id:1,
-        img : `${donar}`,
-        name:'Name'
-    },
-    {
-        id:2,
-        img : `${donar}`,
-        name:'Name'
-    },
-    {
-        id:3,
-        img : `${donar}`,
-        name:'Name'
-    },
-    {
-        id:4,
-        img : `${donar}`,
-        name:'Name'
-    },
-]
+    const fetchDonors = async () => {
+        try {
+          const res = await axios.get('http://localhost:3000/api/donors');
+          console.log(res.data); 
+          setDonors(res.data);
+        } catch (error) {
+          console.error('Error fetching donors:', error);
+        }
+      };      
 
-const Donars = () =>{
+    useEffect(() => {
+        fetchDonors();
+    }, []);
 
-    var settings = {
+    const settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -35,29 +27,28 @@ const Donars = () =>{
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
-      };
+    };
 
-    return(
-        <div className='w-[100vw]'>
-            <Slider {...settings} className='flex justify-evenly flex-wrap w-[100%] mx-auto max-w-[1300px]'>
-            {
-                data.map((data)=>{
-                    return(
-                        <div className='w-[10%] max-w-[250px] bg-white shadow-lg flex flex-col justify-evenly text-center py-4 gap-4'
-                            key={data.id}>
-                           <div className='w-[67%] m-auto py-4'><img src={data.img} alt='' className='w-[100%]'/></div>
-                            <div className='w-[90.1%] h-[1px] bg-[#0000003D] m-auto'></div>
-                            <p className='font-family font-[500] text-[18px] leading-[25px] text-[#183059]'>
-                            {data.name}
-                            </p>
+    return (
+        <div className="w-[100vw]">
+            <Slider {...settings} className="flex justify-evenly flex-wrap w-[100%] mx-auto max-w-[1300px]">
+                {donors.map((donor) => (
+                    <div
+                        className="w-[10%] max-w-[250px] bg-white shadow-lg flex flex-col justify-evenly text-center py-4 gap-4"
+                        key={donor.id}
+                    >
+                        <div className="w-[67%] m-auto py-4">
+                            <img src={donor.imageUrl} alt={donor.name || 'Donor'} className="w-[100%]" />
                         </div>
-                    )
-                })
-            } 
-
-            </Slider>     
-        </div>   
-    )
-}
+                        <div className="w-[90.1%] h-[1px] bg-[#0000003D] m-auto"></div>
+                        <p className="font-family font-[500] text-[18px] leading-[25px] text-[#183059]">
+                            {donor.name || 'Unnamed Donor'}
+                        </p>
+                    </div>
+                ))}
+            </Slider>
+        </div>
+    );
+};
 
 export default Donars;
