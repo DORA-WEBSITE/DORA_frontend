@@ -22,22 +22,22 @@ const Schemes = () => {
                     <hr class="h-0.5 bg-[#CCCCCC] border-none"></hr>
                     <div class="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
                         <div>100% Advance for Visiting Institutions Abroad (pdf)</div>
-                          <a href="https://alumni.iitr.ac.in/media/website/media/100_ADVANCE__2.pdf"> <img src={arrow} alt=""/></a>
+                          <a href="http://localhost:3000/uploads/100_ADVANCE__2.pdf"> <img src={arrow} alt=""/></a>
                     </div>
                     <hr class="h-0.5 bg-[#CCCCCC] border-none"></hr>
                     <div class="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
                         <div>Claim Form for Visiting Institutions Abroad (Pdf)</div>
-                          <a href="https://alumni.iitr.ac.in/media/website/media/Claim_Form_For_IITR_Faculty_1.pdf"> <img src={arrow} alt=""/></a>
+                          <a href="http://localhost:3000/uploads/Claim_Form_For_IITR_Faculty_1.pdf"> <img src={arrow} alt=""/></a>
                     </div>
                     <hr class="h-0.5 bg-[#CCCCCC] border-none"></hr>
                     <div class="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
                         <div>Proforma For Direct Payment (Pdf File)</div>
-                          <a href="https://alumni.iitr.ac.in/media/website/media/Proforma_For_Direct_Payment.pdf"> <img src={arrow} alt=""/></a>
+                          <a href="http://localhost:3000/uploads/Proforma_For_Direct_Payment.pdf"> <img src={arrow} alt=""/></a>
                     </div>
                     <hr class="h-0.5 bg-[#CCCCCC] border-none"></hr>
                     <div class="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
                         <div>TA Form (pdf)</div>
-                          <a href="https://alumni.iitr.ac.in/media/website/media/TRAVELLING_ALLOWANCE_FORM.pdf"> <img src={arrow} alt=""/></a>
+                          <a href="http://localhost:3000/uploads/TRAVELLING_ALLOWANCE_FORM.pdf"> <img src={arrow} alt=""/></a>
                     </div>
                     <hr class="h-0.5 bg-[#CCCCCC] border-none"></hr>
                 </div>
@@ -57,7 +57,7 @@ const Schemes = () => {
                     <hr class="h-0.5 bg-[#CCCCCC] border-none"></hr>
                     <div class="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
                         <div>Travelling Allowance Bill - IIT Roorkee</div>
-                          <a href="https://alumni.iitr.ac.in/media/website/media/TRAVELLING_ALLOWANCE_FORM.pdf"> <img src={arrow} alt=""/></a>
+                          <a href="http://localhost:3000/uploads/TRAVELLING_ALLOWANCE_FORM.pdf"> <img src={arrow} alt=""/></a>
                     </div>
                     <hr class="h-0.5 bg-[#CCCCCC] border-none"></hr>
                     </div>

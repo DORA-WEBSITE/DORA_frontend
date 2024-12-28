@@ -39,7 +39,9 @@ const NewsOutreach = () => {
         <h4 className="flex items-center gap-2">
           <span className="text-xl font-medium text-gray-700">3.</span>
           <a
-            href="/books"
+            href="https://iitrdora.iitr.ac.in/news/books.php"
+              target="_blank"
+            rel="noopener noreferrer"
             className="text-blue-600 hover:underline font-semibold text-lg transition duration-200"
           >
             Books by IITR Alumni

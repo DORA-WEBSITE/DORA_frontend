@@ -44,7 +44,7 @@ const InternationalResearchInternships = () => {
         {/* 50% Advance Form */}
         <div className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/50_ADVANCE_TSS_IRI.pdf"
+            href="http://localhost:3000/uploads/50_ADVANCE_TSS_IRI.pdf"
             className="text-blue-600 hover:underline"
           >
             50% Advance For International Research Internships (TSS-IRI) (Pdf)
@@ -54,7 +54,7 @@ const InternationalResearchInternships = () => {
         {/* Claim Form */}
         <div className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/Claim_Form_For_Internship_Word_File_1_1RPOA0N.pdf"
+            href="http://localhost:3000/uploads/Claim_Form_For_Internship_Word_File_1_1RPOA0N.pdf"
             className="text-blue-600 hover:underline"
           >
             Claim Form For International Research Internships (TSS-IRI) (Pdf)
@@ -68,7 +68,7 @@ const InternationalResearchInternships = () => {
         {/* Travelling Allowance Bill */}
         <div className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/TRAVELLING_ALLOWANCE_FORM.pdf"
+            href="http://localhost:3000/uploads/TRAVELLING_ALLOWANCE_FORM.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -80,7 +80,7 @@ const InternationalResearchInternships = () => {
         {/* Proforma For Direct Payment */}
         <div className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/Proforma_For_Direct_Payment.pdf"
+            href="http://localhost:3000/uploads/Proforma_For_Direct_Payment.pdf"
             className="text-blue-600 hover:underline"
           >
             Proforma For Direct Payment (Pdf File)

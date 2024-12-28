@@ -61,11 +61,11 @@ const DAA2018 = () => {
         {events.map((event, index) => (
           <div key={index} className="border rounded-lg overflow-hidden shadow-md">
             <a href={event.img} target="_blank" rel="noopener noreferrer">
-              {/* <img
+              <img
                 src={event.img}
                 // alt={event.caption}
                 className="w-full h-48 object-cover"
-              /> */}
+              />
             </a>
             <div className="p-4">
               <p className="text-sm text-gray-700">{event.caption}</p>

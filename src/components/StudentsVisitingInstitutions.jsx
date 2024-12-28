@@ -41,7 +41,7 @@ const StudentsVisitingInstitutions = () => {
         {/* 50% Advance Form */}
         <p className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/50_ADVANCE_SVIA_uarbUiR.pdf"
+            href="http://localhost:3000/uploads/50_ADVANCE_SVIA_uarbUiR.pdf"
             className="text-blue-600 hover:underline"
           >
             50% Advance Form for Visiting Institutions Abroad (Pdf)
@@ -51,7 +51,7 @@ const StudentsVisitingInstitutions = () => {
         {/* Claim Form */}
         <p className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/Claim_Form_XaVzHDJ.pdf"
+            href="http://localhost:3000/uploads/Claim_Form_XaVzHDJ.pdf"
             className="text-blue-600 hover:underline"
           >
             Claim Form for Visiting Institutions Abroad (pdf)
@@ -63,7 +63,7 @@ const StudentsVisitingInstitutions = () => {
         {/* Travelling Allowance Bill */}
         <p className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/TRAVELLING_ALLOWANCE_FORM.pdf"
+            href="http://localhost:3000/uploads/TRAVELLING_ALLOWANCE_FORM.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -75,7 +75,7 @@ const StudentsVisitingInstitutions = () => {
         {/* Proforma For Direct Payment */}
         <p className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/Proforma_For_Direct_Payment.pdf"
+            href="http://localhost:3000/uploads/Proforma_For_Direct_Payment.pdf"
             className="text-blue-600 hover:underline"
           >
             Proforma For Direct Payment (Pdf File)

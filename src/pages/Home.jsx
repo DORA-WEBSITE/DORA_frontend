@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from 'react';
+import Slider from 'react-slick';
 import mainbuilding from '../assets/images/mainbuilding .png'
 import design from '../assets/images/design.png';
 import person1 from '../assets/images/person1.png';
@@ -5,18 +7,51 @@ import person2 from '../assets/images/person2.png';
 import Givingback from '../components/Givingback';
 import thompson from '../assets/images/thompson.png';
 import Linksbox from '../components/Linksbox';
-import  Testimonial  from '../components/Testimonial';
-import  HomeSlider  from '../components/HomeSlider';
-import  Donars  from '../components/Donars';
-
-
-
+import Testimonial from '../components/Testimonial';
+import HomeSlider from '../components/HomeSlider';
+import Donars from '../components/Donars';
 
 const Home = () => {
+
+    const [Events, setEvents] = useState([]);
+
+    const fetchEvents = async () => {
+        try {
+            const response = await fetch('http://localhost:3000/api/admin/GetEvents', {
+                method: "GET",
+            });
+            if (response.ok) {
+                const data = await response.json();
+                console.log(data.Events);
+                setEvents(data.Events);
+            } else {
+                console.error("Error fetching services data");
+            }
+        } catch (error) {
+            console.error('Error fetching donors:', error);
+        }
+    };
+
+
+    useEffect(() => {
+        fetchEvents();
+    }, []);
+
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+    };
     return (
         <div className='overflow-hidden'>
 
             <div className='flex flex-col relative justify-center items-center min-h-[502px] mt-[54px]'>
+            {/* <div className='flex flex-col relative justify-center items-center h-screen'> */}
+
 
                 <img src={mainbuilding} alt="mainbuilding" className='w-full h-[504px]' />
 
@@ -26,7 +61,7 @@ const Home = () => {
                 </div>
 
                 <div className='absolute top-[440px]'>
-                 <HomeSlider/>
+                    <HomeSlider />
                 </div>
 
             </div>
@@ -53,7 +88,7 @@ const Home = () => {
 
                 <div className='bg-[#E2E2E270] w-[100vw]'>
                     <div className='absolute top-[250px] right-[0] w-[60%] max-w-[1280px]'>
-                        <img src={design} alt='' className='w-[100%]'/>
+                        <img src={design} alt='' className='w-[100%]' />
                     </div>
 
                     <div className='absolute top-[473px] right-[8vw] w-[14%] z-10 max-w-[300px]'>
@@ -61,7 +96,7 @@ const Home = () => {
                     </div>
 
                     <div className='absolute top-[577px] right-[25vw] w-[14%] z-10 max-w-[300px]'>
-                        <img src={person2} alt=''  className='w-[100%]'/>
+                        <img src={person2} alt='' className='w-[100%]' />
                     </div>
                 </div>
             </div>
@@ -72,29 +107,25 @@ const Home = () => {
                     Events
                 </h1>
 
-                <div className='flex justify-evenly flex-wrap w-[100vw]' >
+                <Slider {...settings} className="max-w-5xl mx-auto">
+                    {Events && Events.length > 0 ? (
+                        Events.map((Event) => (
+                            <div
+                                key={Event.id || Event._id} // Ensure a unique key
+                                className="w-[90%] md:w-[22%] min-h-[246.59px] max-w-[220px] border-[1px] bg-white shadow-lg flex flex-col items-center p-5"
+                            >
+                                <h2 className="text-[#183059] text-[20px] font-[500] font-family">{Event.duration || 'Unknown Duration'}</h2>
+                                <div className="w-[100%] bg-[#0000003D] h-[1px] my-2"></div>
+                                <p className="text-[#183059] text-[16px] font-[400] font-family">{Event.heading || 'No Description Available'}</p>
+                            </div>
+                        ))
+                    ) : (
+                        <div className="text-center w-full py-10 text-[#183059] text-[20px]">
+                            No events available at the moment.
+                        </div>
+                    )}
+                </Slider>
 
-                    <div className='w-[15%] min-h-[246.59px] max-w-[220px] border-[1px] bg-white shadow-lg flex flex-col items-center p-5'>
-                        <h2 className='text-[#183059] text-[20px] font-[500] font-family'>Jublie Reunion</h2>
-                        <div className='w-[100%] bg-[#0000003D] h-[1px]'></div>
-                    </div>
-
-                    <div className='w-[15%] min-h-[246.59px] max-w-[220px] border-[1px] bg-white shadow-lg flex flex-col items-center p-5'>
-                        <h2 className='text-[#183059] text-[20px] font-[500] font-family'>Jublie Reunion</h2>
-                        <div className='w-[100%] bg-[#0000003D] h-[1px]'></div>
-                    </div>
-
-                    <div className='w-[15%] min-h-[246.59px] max-w-[220px] border-[1px] bg-white shadow-lg flex flex-col items-center p-5'>
-                        <h2 className='text-[#183059] text-[20px] font-[500] font-family'>Jublie Reunion</h2>
-                        <div className='w-[100%] bg-[#0000003D] h-[1px]'></div>
-                    </div>
-
-                    <div className='w-[15%] min-h-[246.59px] max-w-[220px] border-[1px] bg-white shadow-lg flex flex-col items-center p-5'>
-                        <h2 className='text-[#183059] text-[20px] font-[500] font-family'>Jublie Reunion</h2>
-                        <div className='w-[100%] bg-[#0000003D] h-[1px]'></div>
-                    </div>
-
-                </div>
             </div>
 
             <div className='relative z-10 bg-white'>
@@ -105,10 +136,8 @@ const Home = () => {
                 <h1 className='font-[700] text-[66px] leading-[25px] text-[#BFBFBF] heading-font text-center'>
                     Top Donars
                 </h1>
-
-
                 <div className=''>
-                <Donars/>
+                    <Donars />
                 </div>
             </div>
 
@@ -146,16 +175,16 @@ const Home = () => {
 
             </div>
 
-            <Testimonial/>
+            <Testimonial />
 
             <div className='bg-[#F2F1F1] flex flex-col justify-center w-full min-h-[792px] py-8'>
 
                 <h1 className='font-[700] text-[66px] leading-[25px] text-[#BFBFBF] heading-font text-center'>Other Links</h1>
 
-                <Linksbox/>
+                <Linksbox />
             </div>
 
-            
+
 
         </div>
 
