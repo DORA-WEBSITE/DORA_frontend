@@ -1,70 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+
 
 const Events = () => {
-  const events = [
-    {
-      dateStart: "Sep 07, 2024",
-      dateEnd: "Sep 09, 2024",
-      title: "Alumni Get together of 1978 Batch",
-      description: "Alumni Get together of 1978 Batch",
-    },
-    {
-      dateStart: "Sep 25, 2024",
-      dateEnd: "Sep 27, 2024",
-      title:
-        "Diamond Jubilee Reunion of 1964 Batch (Including 1966 B.Arch.)",
-      description:
-        "Diamond Jubilee Reunion celebration of the 1964 Batch (Including 1966 B.Arch.) will be organized during Sep 25 - 27, 2024.",
-    },
-    {
-      dateStart: "Sep 28, 2024",
-      dateEnd: "Oct 01, 2024",
-      title:
-        "Alumni Get together of Earth Sciences Branch, 1974 and 1975 Batches",
-      description:
-        "Alumni Get together of Earth Sciences Branch, 1974 and 1975 Batches",
-    },
-    {
-      dateStart: "Oct 16, 2024",
-      dateEnd: "Oct 18, 2024",
-      title:
-        "Ruby Jubilee Reunion of 1984 Batch (Including 1985 B.Arch.)",
-      description:
-        "Ruby Jubilee Reunion celebration of the 1984 Batch (Including 1985 B.Arch.) will be organized during Oct 16-18, 2024.",
-    },
-    {
-      dateStart: "Nov 15, 2024",
-      dateEnd: "Nov 17, 2024",
-      title:
-        "Silver Jubilee Reunion of 1999 Batch (Including 2000 B.Arch.)",
-      description:
-        "Silver Jubilee Reunion celebration of 1999 Batch (Including 2000 B.Arch.) will be organized during Nov 15-17, 2024.",
-    },
-    {
-      dateStart: "Dec 02, 2024",
-      dateEnd: "Dec 04, 2024",
-      title:
-        "Golden Jubilee Reunion of 1974 Batch (Including 1975 B.Arch.)",
-      description:
-        "Golden Jubilee Reunion celebration of the 1974 Batch (Including 1975 B.Arch.) will be organized during Dec 02-04, 2024.",
-    },
-    {
-      dateStart: "Dec 13, 2024",
-      dateEnd: "Dec 15, 2024",
-      title:
-        "Coral Jubilee Reunion of 1989 Batch (Including 1990 B.Arch.)",
-      description:
-        "Coral Jubilee Reunion celebration of the 1989 Batch (Including 1990 B.Arch.) will be organized during Dec 13-15, 2024.",
-    },
-  ];
+  const [Events, setEvents] = useState([]);
+
+  useEffect(() => {
+  const fetchEvents = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/api/admin/GetEvents');
+      if (response.ok) {
+        const data = await response.json();
+        setEvents(data.Events);
+      } else {
+        console.error("Error fetching events data");
+      }
+    } catch (error) {
+      console.error('Error fetching events:', error);
+    }
+  };
+
+  fetchEvents();
+}, []);
 
   return (
     <div className="bg-gray-50 p-6 rounded-lg shadow-lg mt-[150px]">
       <h1 className="text-2xl font-bold text-center mb-6">Events</h1>
       <div className="space-y-6">
-        {events.map((event, index) => (
+        {Events.map((event) => (
           <div
-            key={index}
+            key={event._id}
             className="flex items-start space-x-4 bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow"
           >
             <svg
@@ -76,16 +40,16 @@ const Events = () => {
             </svg>
             <div className="flex-shrink-0 text-center">
               <p className="font-medium">
-                {event.dateStart}
-                <br />
+                {event.duration}
+                {/* <br />
                 <i>to</i>
                 <br />
-                {event.dateEnd}
+                {event.dateEnd} */}
               </p>
             </div>
             <div>
               <h2 className="text-lg font-semibold text-gray-800">
-                {event.title}
+                {event.heading}
               </h2>
               <p className="text-sm text-gray-600">{event.description}</p>
             </div>

@@ -55,7 +55,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <a href="/Upload" className="text-white bg-[#183059] hover:bg-[#1b3b72] px-4 py-2 block text-center transition duration-300">
+          <a href="/" className="text-white bg-[#183059] hover:bg-[#1b3b72] px-4 py-2 block text-center transition duration-300">
             IARC
           </a>
         </li>

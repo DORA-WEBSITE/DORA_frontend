@@ -87,7 +87,7 @@ const GivingBack = () => {
               </div>
               <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
             </a>
-            <a href="https://alumni.iitr.ac.in/media/website/media/Foreign_Contribution_Act.pdf" target="_blank">
+            <a href="http://localhost:3000/uploads/Foreign_Contribution_Act.pdf" target="_blank">
               <div className="flex justify-between">
                 <div className="text-lg text-[#183059]">
                   Foreign Contribution Regulation Act
@@ -103,7 +103,7 @@ const GivingBack = () => {
               </div>
               <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
             </a>
-            <a href="https://alumni.iitr.ac.in/media/website/media/Tax_Exemption.pdf" target="_blank">
+            <a href="http://localhost:3000/uploads/Tax_Exemption.pdf" target="_blank">
               <div className="flex justify-between">
                 <div className="text-lg text-[#183059]">Tax Exemption</div>
                 <div className="text-2xl text-[#A1A1A1]">{">"}</div>

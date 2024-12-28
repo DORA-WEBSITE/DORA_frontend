@@ -55,7 +55,7 @@ const data2 = [
     },
     {
         id: 2,
-        url: '',
+        url: 'https://iitrdora.iitr.ac.in/faculty/departmentnodalfaculty.html',
         title1: 'Departmental Nodal Faculty',
         title2: '',
         arrow: `${arrow}`
@@ -78,6 +78,13 @@ const data2 = [
         id: 5,
         url: 'https://iitrdora.iitr.ac.in/news/ypages/IITRDcsr.html',
         title1: 'IITRDF-CSR',
+        title2: '',
+        arrow: `${arrow}`
+    },
+    {
+        id: 6,
+        url: 'https://iitrdora.iitr.ac.in/news/ypages/IITRDcsr.html',
+        title1: 'IITRDF',
         title2: '',
         arrow: `${arrow}`
     }

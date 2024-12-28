@@ -49,7 +49,7 @@ const GoodInternationalConferences = () => {
         {/* 50% Advance Form */}
         <div className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/50_ADVANCE_GIC.pdf"
+            href="http://localhost:3000/uploads/media/50_ADVANCE_GIC.pdf"
             className="text-blue-600 hover:underline"
           >
             50% Advance For Good International Conferences/Workshops/Symposia (PDF)
@@ -59,7 +59,7 @@ const GoodInternationalConferences = () => {
         {/* Claim Form */}
         <div className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/Claim_Form_.pdf"
+            href="http://localhost:3000/uploads/media/Claim_Form_.pdf"
             className="text-blue-600 hover:underline"
           >
             Claim Form For Good International Conferences/Workshops/Symposia (PDF)
@@ -73,7 +73,7 @@ const GoodInternationalConferences = () => {
         {/* Travelling Allowance Bill */}
         <div className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/TRAVELLING_ALLOWANCE_FORM.pdf"
+            href="http://localhost:3000/uploads/TRAVELLING_ALLOWANCE_FORM.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -85,7 +85,7 @@ const GoodInternationalConferences = () => {
         {/* Proforma For Direct Payment */}
         <div className="mb-4">
           <a
-            href="https://alumni.iitr.ac.in/media/website/media/Proforma_For_Direct_Payment.pdf"
+            href="http://localhost:3000/uploads/Proforma_For_Direct_Payment.pdf"
             className="text-blue-600 hover:underline"
           >
             Proforma For Direct Payment (Pdf File)

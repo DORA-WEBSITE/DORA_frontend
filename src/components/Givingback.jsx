@@ -92,13 +92,13 @@ const Givingback = () => {
                     }      
                 </div>
 
-                <div className='flex flex-wrap w-[75vw] max-w-[1480px] min-h-[240px] bg-[#F2F2F2] shadow-lg justify-evenly'>
+                {/* <div className='flex flex-wrap w-[75vw] max-w-[1480px] min-h-[240px] bg-[#F2F2F2] shadow-lg justify-evenly'>
                     {
                     data2.map((data)=>{
                         return <Card key = {data.id} {...data}/>
                     })
                     }
-                </div>
+                </div> */}
 
             </div>
         </div>

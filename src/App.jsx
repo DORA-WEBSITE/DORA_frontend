@@ -1,15 +1,15 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom';
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";  // Import Navbar
-import Header from "./components/Header";  // Import Header
+import Navbar from "./components/Navbar";  
+import Header from "./components/Header";  
 import GivingBack from "./pages/GivingBack";
 import Awards from './pages/Awards'
 import Gallery from './pages/Gallery'
 import Schemes from './pages/Schemes'
-import Books from './pages/Books'
 import Home from "./pages/Home";
-import Upload from "./pages/Uploadimg";
+import { Error } from './Pages/Error';
+import AdminPanel from "./pages/AdminPanel/AdminPanel";
 import Dora_Office from "./pages/Dora_Office";
 import GlobalNetwork from "./components/globalNetwork";
 import NewsOutreach from "./components/NewsOutreach";
@@ -34,13 +34,16 @@ import ProfASAryaYoungEarthquakeEngineerAward from "./components/awards-comp/Pro
 import ProfSRMehraMemorialAward from "./components/awards-comp/ProfSRMehraMemorialAward";
 import DonorsCTA from "./components/esteemedDonors";
 import GivingBackCTA from "./components/GivingBackCTA";
+import AdminLogin from "./pages/Admin-Login";
+import AdminLogout from "./pages/Admin-Logout";
+
+
 function App() {
   return (
     <div className="App">
       
       <Navbar />
       <Header />
-
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/givingback' element={<GivingBack />} />
@@ -55,13 +58,13 @@ function App() {
         <Route path='/conference' element={<GoodInternationalConferences />} />
         <Route path='/Schemes' element={<Schemes />} />
         <Route path='/newsoutreach' element={<NewsOutreach />} />
-        <Route path='/Books' element={<Books />} />
-        <Route path='/Upload' element={<Upload />} />
+        <Route path='*' element={<Error />} />
+        <Route path='/Admin' element={<AdminLogin />} />
+        <Route path='/AdminLogout' element={<AdminLogout />} />
+        <Route path='/AdminPanel/*' element={<AdminPanel />} />
         <Route path='/Dora_Office' element={<Dora_Office />} />
         <Route path='/topdonors' element={<DonorsCTA />} />
         <Route path='/Givingbackcta' element={<GivingBackCTA />} />
-        
-        
         <Route path="/awards/daa-dyya-2019" element={<DAA_DYAA2019 />} />
         <Route path="/awards/daa-2019" element={<DAA_2019 />} />
         <Route path="/awards/daa-2018" element={<DAA_2018 />} />
@@ -74,10 +77,8 @@ function App() {
         <Route path="/awards/mahesh-varma-technology-innovation-award" element={<MaheshVarmaTechnologyInnovationAward />} />
         <Route path="/awards/op-jain-memorial-structural-design-award" element={<OPJainMemorialStructuralDesignAward />} />
         <Route path="/awards/prof-a-s-arya-young-earthquake-engineer-award" element={<ProfASAryaYoungEarthquakeEngineerAward />} />
-        <Route path="/awards/prof-s-r-mehra-memorial-award" element={<ProfSRMehraMemorialAward />} />
-        
+        <Route path="/awards/prof-s-r-mehra-memorial-award" element={<ProfSRMehraMemorialAward />} />       
       </Routes>
- 
       <Footer />
     </div>
   );
