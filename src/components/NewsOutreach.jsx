@@ -58,6 +58,17 @@ const NewsOutreach = () => {
             IITR in the News
           </a>
         </h4>
+        <h4 className="flex items-center gap-2">
+          <span className="text-xl font-medium text-gray-700">5.</span>
+          <a
+            href="/directorsmessage"
+            // target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline font-semibold text-lg transition duration-200"
+          >
+          Director's Message
+          </a>
+        </h4>
       </div>
     </div>
   );

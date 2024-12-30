@@ -36,6 +36,8 @@ import DonorsCTA from "./components/esteemedDonors";
 import GivingBackCTA from "./components/GivingBackCTA";
 import AdminLogin from "./pages/Admin-Login";
 import AdminLogout from "./pages/Admin-Logout";
+import DirectorsMessage from "./components/DirectorsMessage";
+import AlumniAwardShowcase from "./components/AlumniAwardShowcase";
 
 
 function App() {
@@ -53,6 +55,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/jubilee-reunions" element={<JubileeReunions />} />
         <Route path='/Awards' element={<Awards />} />
+        
         <Route path='/studentsvisitingabroad' element={<StudentsVisitingInstitutions />} />
         <Route path='/InternationalResearchInternships' element={<InternationalResearchInternships />} />
         <Route path='/conference' element={<GoodInternationalConferences />} />
@@ -63,6 +66,8 @@ function App() {
         <Route path='/AdminLogout' element={<AdminLogout />} />
         <Route path='/AdminPanel/*' element={<AdminPanel />} />
         <Route path='/Dora_Office' element={<Dora_Office />} />
+        <Route path="/directorsmessage" element={< DirectorsMessage/>} />
+        <Route path="/alumniawardshowcase" element={< AlumniAwardShowcase/>} />
         <Route path='/topdonors' element={<DonorsCTA />} />
         <Route path='/Givingbackcta' element={<GivingBackCTA />} />
         <Route path="/awards/daa-dyya-2019" element={<DAA_DYAA2019 />} />

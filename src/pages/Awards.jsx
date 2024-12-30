@@ -10,7 +10,22 @@ const Awards = () => {
             </div>
             <div className="flex flex-col space-y-16 mt-[70px] ">
                 <div className="shadow-lg shadow-[#BFBFBF] w-4/5 mx-auto p-[60px] space-y-12">
-                    <div className="text-2xl font-bold text-[32px] font-poppins text-blue-900">Distinguished Alumnus Awards</div>
+                    {/* <Link to="/alumniawardshowcase">
+                        <div className="text-2xl font-bold text-[32px] font-poppins text-blue-900">Distinguished Alumnus Awards</div>
+                        <img src={arrow} alt="" />
+                    </Link> */}
+                     <Link to="/alumniawardshowcase">
+                      <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div className="ml-[300px] text-2xl font-bold text-[32px] font-poppins text-blue-900">Distinguished Alumnus Awards</div>
+
+                           
+                            <div> <img src={arrow} alt="" style={{ marginLeft: "1vw", marginTop: "0.5vw" }} /></div>
+
+                        </div>
+                        <hr className="w-1/2 h-0.5 bg-[#CCCCCC] border-none ml-[300px]" />
+
+                        </Link>
+
                     <div className="text-gray-700 ml-[35px]">
                         <div className="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
                             <div>DAA & DYAA 2019</div>
@@ -44,17 +59,17 @@ const Awards = () => {
                 </div>
                 <div className="shadow-lg shadow-[#BFBFBF]  w-4/5 mx-auto p-[60px] space-y-12 text-blue-900">
                     <a href="https://iitrdora.iitr.ac.in/news/ypages/daa-2022.php#osa">
-                        <div style={{display:"flex",flexDirection:"row"}}>
-                    <div className="text-2xl font-bold text-[32px] font-poppins">Outstanding Service Awards
-                    
-                    </div>
-                   <div> <img src={arrow} alt="" style={{marginLeft:"39vw",marginTop:"0.5vw"}}/></div>
-                   
-                   </div>
-                   <hr className="h-0.5 bg-[#CCCCCC] border-none"></hr>
+                        <div style={{ display: "flex", flexDirection: "row" }}>
+                            <div className="text-2xl font-bold text-[32px] font-poppins">Outstanding Service Awards
+
+                            </div>
+                            <div> <img src={arrow} alt="" style={{ marginLeft: "39vw", marginTop: "0.5vw" }} /></div>
+
+                        </div>
+                        <hr className="h-0.5 bg-[#CCCCCC] border-none"></hr>
                     </a>
-                    
-                    </div>
+
+                </div>
                 <div className="shadow-lg shadow-[#BFBFBF]  w-4/5 mx-auto p-[60px] space-y-12 text-blue-900">
                     <div className="text-2xl font-bold text-[32px] font-poppins">IIT Roorkee Research Awards</div>
                     <div className="text-gray-700 ml-[35px]">
@@ -126,19 +141,19 @@ const Awards = () => {
 
                 <div className="shadow-lg shadow-[#BFBFBF]  w-4/5 mx-auto p-[60px] space-y-12 text-blue-900">
                     <a href="https://iitrdora.iitr.ac.in/alumni/rk-prize.php">
-                        <div style={{display:"flex",flexDirection:"row"}}>
-                    <div className="text-2xl font-bold text-[32px] font-poppins">  Ram Kumar Prize
-                    
-                    </div>
-                   <div> <img src={arrow} alt="" style={{marginLeft:"50vw",marginTop:"0.5vw"}}/></div>
-                   
-                   </div>
-                   <hr className="h-0.5 bg-[#CCCCCC] border-none"></hr>
+                        <div style={{ display: "flex", flexDirection: "row" }}>
+                            <div className="text-2xl font-bold text-[32px] font-poppins">  Ram Kumar Prize
+
+                            </div>
+                            <div> <img src={arrow} alt="" style={{ marginLeft: "50vw", marginTop: "0.5vw" }} /></div>
+
+                        </div>
+                        <hr className="h-0.5 bg-[#CCCCCC] border-none"></hr>
                     </a>
-                    
-                    </div>
+
+                </div>
             </div>
-            
+
         </div>
     );
 };
