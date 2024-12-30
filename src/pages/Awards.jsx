@@ -16,13 +16,13 @@ const Awards = () => {
                     </Link> */}
                      <Link to="/alumniawardshowcase">
                       <div style={{ display: "flex", flexDirection: "row" }}>
-                      <div className="ml-[300px] text-2xl font-bold text-[32px] font-poppins text-blue-900">Distinguished Alumnus Awards</div>
+                      <div className="ml-[265px] text-2xl font-bold text-[32px] font-poppins text-blue-900">Distinguished Alumnus Awards</div>
 
                            
-                            <div> <img src={arrow} alt="" style={{ marginLeft: "1vw", marginTop: "0.5vw" }} /></div>
+                            <div> <img src={arrow} alt="" style={{ marginLeft: "0.5vw", marginTop: "0.5vw" }} /></div>
 
                         </div>
-                        <hr className="w-1/2 h-0.5 bg-[#CCCCCC] border-none ml-[300px]" />
+                        <hr className="w-1/2 h-0.5 bg-[#CCCCCC] border-none ml-[260px]" />
 
                         </Link>
 
