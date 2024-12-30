@@ -14,17 +14,22 @@ const Awards = () => {
                         <div className="text-2xl font-bold text-[32px] font-poppins text-blue-900">Distinguished Alumnus Awards</div>
                         <img src={arrow} alt="" />
                     </Link> */}
-                     <Link to="/alumniawardshowcase">
-                      <div style={{ display: "flex", flexDirection: "row" }}>
-                      <div className="ml-[265px] text-2xl font-bold text-[32px] font-poppins text-blue-900">Distinguished Alumnus Awards</div>
+                     <Link to="/alumniawardshowcase" className="block">
+      <div className="flex  items-center justify-center text-center space-y-2">
+        <div className="text-2xl font-bold text-[32px] font-poppins text-blue-900">
+          Distinguished Alumnus Awards
+        </div>
+        <img
+          src={arrow}
+          alt="Arrow"
+          className="w-auto h-auto mt-2"
+          style={{ marginLeft: "0.5vw", marginTop: "0.5vw" }}
+        />
+       
+      </div>
+      <hr className="w-1/2 h-0.5 bg-[#CCCCCC] border-none mx-auto" />
 
-                           
-                            <div> <img src={arrow} alt="" style={{ marginLeft: "0.5vw", marginTop: "0.5vw" }} /></div>
-
-                        </div>
-                        <hr className="w-1/2 h-0.5 bg-[#CCCCCC] border-none ml-[260px]" />
-
-                        </Link>
+    </Link>
 
                     <div className="text-gray-700 ml-[35px]">
                         <div className="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
