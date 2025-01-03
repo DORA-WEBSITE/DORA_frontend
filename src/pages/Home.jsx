@@ -170,7 +170,7 @@ const Home = () => {
 
       <div className="min-h-[180px] md:min-h-[260px] bg-[#061F4A] relative flex justify-center items-center mt-[5px] w-[100vw]">
         <img src={thompson} alt="" className="w-full" />
-        <div className="flex absolute md:justify-evenly flex-wrap gap-6 text-white z-10 px-4 md:px-10">
+        <div className="justify-center flex absolute md:justify-evenly flex-wrap gap-6 text-white z-10 px-4 md:px-10">
           <div className="flex flex-col font-family justify-center items-center md:gap-[24px]">
             <span className="font-[700] lg:text-[48px] text-[25px] sm:text-[36px] md:text-[40px] md:md:leading-[72px]">
               1200+
