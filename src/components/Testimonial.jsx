@@ -42,8 +42,8 @@ const Testimonial = () => {
     };
 
     return (
-        <div className='flex flex-col justify-center w-full min-h-[434px] my-10'>
-            <h1 className='font-[700] text-[66px] leading-[25px] text-[#BFBFBF] heading-font text-center my-5'>Testimonial</h1>
+        <div className='flex flex-col justify-center w-full md:min-h-[434px] my-10'>
+            <h1 className='font-[700] text-[36px] md:text-[66px] leading-[25px] text-[#BFBFBF] heading-font text-center my-5'>Testimonial</h1>
             {isLoading ? (
                 <div className="flex justify-center items-center h-40">
                     <p className="text-lg font-medium text-gray-600">Loading donors...</p>
