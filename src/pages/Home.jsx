@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import mainbuilding from '../assets/images/mainbuilding .png'
 import design from '../assets/images/design.png';

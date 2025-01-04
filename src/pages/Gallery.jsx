@@ -46,26 +46,70 @@ const Gallery = () => {
         },
       ];
     return (
-    <div class="pt-48 text-center mb-4">
-        <div class="text-center text-[#BFBFBF] font-passion text-6xl font-bold">
-            Gallery
-        </div>
-        <div class="flex flex-col space-y-16 mt-[70px]">
-            {/* <div class="shadow-lg shadow-[#BFBFBF] w-4/5 mx-auto p-[60px] space-y-12">
-                <div class="text-2xl font-bold text-[32px] font-poppins text-blue-900">Foundation Day</div>
+    // <div class="pt-48 text-center mb-4">
+    //     <div class="text-center text-[#BFBFBF] font-passion text-6xl font-bold">
+    //         Gallery
+    //     </div>
+    //     <div class="flex flex-col space-y-16 mt-[70px]">
+    //         {/* <div class="shadow-lg shadow-[#BFBFBF] w-4/5 mx-auto p-[60px] space-y-12">
+    //             <div class="text-2xl font-bold text-[32px] font-poppins text-blue-900">Foundation Day</div>
              
-            </div> */}
-               <div className="shadow-lg shadow-[#BFBFBF] w-4/5 mx-auto p-[60px] space-y-12">
-      <div className="text-2xl font-bold text-[32px] font-poppins text-blue-900">
+    //         </div> */}
+    //            <div className="shadow-lg shadow-[#BFBFBF] w-4/5 mx-auto p-[60px] space-y-12">
+    //   <div className="text-2xl font-bold text-[32px] font-poppins text-blue-900">
+    //     Foundation Day Celebrations
+    //   </div>
+    //   <div className="text-gray-700 ml-[35px]">
+    //     {celebrations.map((celebration, index) => (
+    //       <div key={index}>
+    //         <div className="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
+    //           <div>{celebration.title}</div>
+    //           <a href={celebration.link} target="_blank" rel="noopener noreferrer">
+    //           <img src={arrow} alt=""/>
+    //           </a>
+    //         </div>
+    //         <hr className="h-0.5 bg-[#CCCCCC] border-none" />
+    //       </div>
+    //     ))}
+    //   </div>
+    // </div>
+    //         <div className="shadow-lg shadow-[#BFBFBF] w-4/5 mx-auto p-[60px] space-y-12">
+    //   <div className="text-2xl font-bold text-[32px] font-poppins text-blue-900">
+    //     Jubilee Reunions
+    //   </div>
+    //   <div className="text-gray-700 ml-[35px]">
+    //     {reunions.map((reunion, index) => (
+    //       <div key={index}>
+    //         <div className="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
+    //           <div>{reunion.title}</div>
+    //           <a href={reunion.link} target="_blank" rel="noopener noreferrer">
+    //           <img src={arrow} alt=""/>
+    //           </a>
+    //         </div>
+    //         <hr className="h-0.5 bg-[#CCCCCC] border-none" />
+    //       </div>
+    //     ))}
+    //   </div>
+    // </div>
+    //     </div>
+    // </div>
+    <div className="pt-24 md:pt-48 text-center mb-4">
+  <div className="text-center text-[#BFBFBF] font-passion text-4xl md:text-6xl font-bold">
+    Gallery
+  </div>
+  <div className="flex flex-col space-y-8 md:space-y-16 mt-10 md:mt-[70px]">
+    {/* Foundation Day Section */}
+    <div className="shadow-lg shadow-[#BFBFBF] w-[90%] md:w-4/5 mx-auto p-6 md:p-[60px] space-y-6 md:space-y-12">
+      <div className="text-2xl flex items-start md:text-2xl font-bold text-[24px] md:text-[32px] font-poppins text-blue-900">
         Foundation Day Celebrations
       </div>
-      <div className="text-gray-700 ml-[35px]">
+      <div className="text-gray-700 ml-4 md:ml-[35px]">
         {celebrations.map((celebration, index) => (
           <div key={index}>
-            <div className="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
+            <div className="flex justify-between items-center text-[12px] md:text-[18px] font-poppins mt-4 md:mt-[25px] mb-2 md:mb-[5px]">
               <div>{celebration.title}</div>
               <a href={celebration.link} target="_blank" rel="noopener noreferrer">
-              <img src={arrow} alt=""/>
+                <img src={arrow} alt="" />
               </a>
             </div>
             <hr className="h-0.5 bg-[#CCCCCC] border-none" />
@@ -73,17 +117,19 @@ const Gallery = () => {
         ))}
       </div>
     </div>
-            <div className="shadow-lg shadow-[#BFBFBF] w-4/5 mx-auto p-[60px] space-y-12">
-      <div className="text-2xl font-bold text-[32px] font-poppins text-blue-900">
+
+    {/* Jubilee Reunions Section */}
+    <div className="shadow-lg shadow-[#BFBFBF] w-[90%] md:w-4/5 mx-auto p-6 md:p-[60px] space-y-6 md:space-y-12">
+      <div className="text-xl flex items-start md:text-2xl font-bold text-[24px] md:text-[32px] font-poppins text-blue-900">
         Jubilee Reunions
       </div>
-      <div className="text-gray-700 ml-[35px]">
+      <div className="text-gray-700 ml-4 md:ml-[35px]">
         {reunions.map((reunion, index) => (
           <div key={index}>
-            <div className="flex justify-between items-center text-[18px] font-poppins mt-[25px] mb-[5px]">
+            <div className="flex justify-between items-center text-[12px] md:text-[18px] font-poppins mt-4 md:mt-[25px] mb-2 md:mb-[5px]">
               <div>{reunion.title}</div>
               <a href={reunion.link} target="_blank" rel="noopener noreferrer">
-              <img src={arrow} alt=""/>
+                <img src={arrow} alt="" />
               </a>
             </div>
             <hr className="h-0.5 bg-[#CCCCCC] border-none" />
@@ -91,8 +137,9 @@ const Gallery = () => {
         ))}
       </div>
     </div>
-        </div>
-    </div>
+  </div>
+</div>
+
     );
 };   
 
