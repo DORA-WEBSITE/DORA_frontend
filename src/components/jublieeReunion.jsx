@@ -24,32 +24,36 @@ const JubileeReunions = () => {
 
   return (
     <div className="p-6 bg-gray-100 rounded-md shadow-md mt-[150px]">
-      <h1 className="text-3xl font-bold mb-4">Jubilee Reunions</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {reunions.map((reunion, index) => (
-          <div key={index} className="text-center">
-            <a href={reunion.link} target="_blank" rel="noopener noreferrer">
-              <img
-                src={reunion.imageSrc}
-                alt={reunion.title}
-                className="w-full h-40 object-cover rounded-md border-2 border-gray-300 mb-2"
-              />
-            </a>
-            <p className="text-lg font-semibold">
-              <a
-                href={reunion.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 underline"
-              >
-                {reunion.title}
-              </a>
-            </p>
-            <p className="text-gray-700">{reunion.batch}</p>
-          </div>
-        ))}
+  {/* Header */}
+  <h1 className="text-2xl font-bold mb-4 text-center text-blue-800">Jubilee Reunions</h1>
+  
+  {/* Reunions Grid */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {reunions.map((reunion, index) => (
+      <div key={index} className="text-center bg-white p-4 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+        <a href={reunion.link} target="_blank" rel="noopener noreferrer">
+          <img
+            src={reunion.imageSrc}
+            alt={reunion.title}
+            className="w-full h-40 object-cover rounded-md border-2 border-gray-300 mb-3"
+          />
+        </a>
+        <p className="text-lg font-semibold">
+          <a
+            href={reunion.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline hover:text-blue-800 transition-colors duration-200"
+          >
+            {reunion.title}
+          </a>
+        </p>
+        <p className="text-gray-700 text-xs">{reunion.batch}</p>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
   );
 };
 
