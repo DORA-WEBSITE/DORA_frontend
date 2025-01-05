@@ -4,17 +4,18 @@ import BenefitsImage from "../assets/images/image1.png";
 
 const GivingBack = () => {
   return (
-    <div className="flex flex-col gap-4 mb-4">
-      <div className="font-poppins">
+    <div className="w-fit flex flex-col gap-4 mb-4  ">
+      <div className="font-poppinsw-full md:w-auto relative">
         <img
           className="h-[504px] w-full object-cover"
           src={mainBuilding}
           alt=""
         />
-        <div className="absolute h-[504px] inset-0 bg-[#0B0B0B] opacity-[69%]"></div>
-        <div className="flex flex-col h-[504px] gap-8 absolute inset-0 z-10 items-center justify-center">
+        
+        <div className=" absolute h-[504px] inset-0 bg-[#0B0B0B] opacity-[69%]"></div>
+        <div className="  flex flex-col h-[504px] gap-8 absolute inset-0 z-10 items-center justify-center px-5">
           <div className="text-white font-extrabold text-5xl">GIVING BACK</div>
-          <div className="text-center text-white text-2xl font-semibold w-[642px]">
+          <div className="w-none text-center text-white text-2xl font-semibold md:w-[642px]">
             "Giving back to continue to grow together and raise the tradition of
             excellence."
           </div>
@@ -29,110 +30,106 @@ const GivingBack = () => {
         </div>
       </div>
 
-      <div className="flex gap-4 mx-8 font-poppins justify-around">
-        <div className="w-6/12 bg-[#223551] text-white text-justify px-12 py-8 text-lg line leading-8">
-          <p className="text-3xl font-semibold mb-4">WHY GIVE BACK?</p>
-          <div className="bg-white [height:3px] mb-2"></div>
-          <p>
-            Your invaluable monetary support shall help IITR to build new
-            infrastructure and undertake further developmental activities. It is
-            of critical significance in helping IITR climb up the ladder of
-            global excellence.The received funds shall be useful in various
-            domains and will directly benefit and/or create opportunities for
-            programmes like:
-          </p>
-          <ul className="list-disc ml-4">
-            <li>
-              Running scholarships and awards for needy and deserving students
-              as well as award recognition for notable alumni to promote the
-              culture of learning and excellence.
-            </li>
-            <li>
-              To further strengthen world class research facilities and create
-              an ideal environment for scientific innovation.
-            </li>
-            <li>
-              To bridge the student - faculty ratio to facilitate interactive
-              world-class learning.
-            </li>
-          </ul>
-        </div>
-
-        <div className="w-5/12 border-s shadow-2xl py-10 px-12 bg-white">
-          <p className="text-2xl font-bold mb-4 text-[#183059]">
-            Important Links
-          </p>
-          <div className="[height:3px] bg-[#183059] w-1/2 mb-8"></div>
-          <ul className="flex-col flex gap-6">
-            <a href="https://iitrdora.iitr.ac.in/givingbacknew/giving.php" target="_blank">
-              <div className="flex justify-between">
-                <div className="text-lg text-[#183059]">Scheme</div>
-                <div className="text-2xl text-[#A1A1A1]">{">"}</div>
-              </div>
-              <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
-            </a>
-            <a href="/topdonors">
-              <div className="flex justify-between">
-                <div className="text-lg text-[#183059]">Esteemed Donors</div>
-                <div className="text-2xl text-[#A1A1A1]">{">"}</div>
-              </div>
-              <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
-            </a>
-            <a href="/Givingbackcta">
-              <div className="flex justify-between">
-                <div className="text-lg text-[#183059]">
-                  Giving back to IITR
-                </div>
-                <div className="text-2xl text-[#A1A1A1]">{">"}</div>
-              </div>
-              <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
-            </a>
-            <a href="http://localhost:3000/uploads/Foreign_Contribution_Act.pdf" target="_blank">
-              <div className="flex justify-between">
-                <div className="text-lg text-[#183059]">
-                  Foreign Contribution Regulation Act
-                </div>
-                <div className="text-2xl text-[#A1A1A1]">{">"}</div>
-              </div>
-              <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
-            </a>
-            <a href="https://iitrdora.iitr.ac.in/donors/csr.php" target="_blank">
-              <div className="flex justify-between">
-                <div className="text-lg text-[#183059]">CSR Contribution</div>
-                <div className="text-2xl text-[#A1A1A1]">{">"}</div>
-              </div>
-              <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
-            </a>
-            <a href="http://localhost:3000/uploads/Tax_Exemption.pdf" target="_blank">
-              <div className="flex justify-between">
-                <div className="text-lg text-[#183059]">Tax Exemption</div>
-                <div className="text-2xl text-[#A1A1A1]">{">"}</div>
-              </div>
-              <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
-            </a>
-            <a href="https://iitrdora.iitr.ac.in/donors/Avenues.php">
-              <div className="flex justify-between">
-                <div className="text-lg text-[#183059]">Avenues for Alumni</div>
-                <div className="text-2xl text-[#A1A1A1]">{">"}</div>
-              </div>
-              <div className="bg-[#A1A1A1] [height:2px] mt-2"></div>
-            </a>
-          </ul>
-        </div>
+      <div className="flex flex-col gap-4 mx-6 md:mx-8 font-poppins justify-around md:flex-row">
+      {/* Left Section */}
+      <div className="w-full md:mt-0 mt-5 px-4 text-left md:w-6/12 bg-[#223551] text-white md:text-justify md:px-12 py-8 text-lg leading-8 break-words">
+        <p className="md:text-3xl  text-[20px]  font-semibold mb-4">WHY GIVE BACK?</p>
+        <div className="bg-white h-[3px] mb-2"></div>
+        <p className="md:text-lg text-[12px] " style={{lineHeight:"2.3rem"}}>
+          Your invaluable monetary support shall help IITR to build new
+          infrastructure and undertake further developmental activities. It is
+          of critical significance in helping IITR climb up the ladder of
+          global excellence. The received funds shall be useful in various
+          domains and will directly benefit and/or create opportunities for
+          programmes like:
+        </p>
+        <ul className="list-disc ml-4 md:text-lg text-[12px]"  style={{lineHeight:"2.3rem"}}>
+          <li>
+            Running scholarships and awards for needy and deserving students
+            as well as award recognition for notable alumni to promote the
+            culture of learning and excellence.
+          </li>
+          <li>
+            To further strengthen world-class research facilities and create
+            an ideal environment for scientific innovation.
+          </li>
+          <li>
+            To bridge the student-faculty ratio to facilitate interactive
+            world-class learning.
+          </li>
+        </ul>
       </div>
 
-      <div className="[min-height:388px] bg-[#223551] text-white font-poppins px-12 py-6">
+      {/* Right Section */}
+      <div className="w-full md:w-5/12 border-s shadow-2xl py-10 px-6 md:px-12 bg-white mt-5 md:mt-0">
+        <p className="md:text-2xl text-xl font-bold mb-4 text-[#183059]">Important Links</p>
+        <div className="h-[3px] bg-[#183059] md:w-1/2 w-12/13 mb-8"></div>
+        <ul className="flex-col flex gap-6">
+          <a href="https://iitrdora.iitr.ac.in/givingbacknew/giving.php" target="_blank" rel="noopener noreferrer">
+            <div className="flex justify-between">
+              <div className="md:text-lg text-base text-[#183059]">Scheme</div>
+              <div className="text-2xl text-[#A1A1A1]">{">"}</div>
+            </div>
+            <div className="bg-[#A1A1A1] h-[2px] mt-2"></div>
+          </a>
+          <a href="/topdonors">
+            <div className="flex justify-between">
+              <div className="md:text-lg text-base text-[#183059]">Esteemed Donors</div>
+              <div className="text-2xl text-[#A1A1A1]">{">"}</div>
+            </div>
+            <div className="bg-[#A1A1A1] h-[2px] mt-2"></div>
+          </a>
+          <a href="/Givingbackcta">
+            <div className="flex justify-between">
+              <div className="md:text-lg text-base text-[#183059]">Giving back to IITR</div>
+              <div className="text-2xl text-[#A1A1A1]">{">"}</div>
+            </div>
+            <div className="bg-[#A1A1A1] h-[2px] mt-2"></div>
+          </a>
+          <a href="http://localhost:3000/uploads/Foreign_Contribution_Act.pdf" target="_blank" rel="noopener noreferrer">
+            <div className="flex justify-between">
+              <div className="md:text-lg text-base text-[#183059]">Foreign Contribution Regulation Act</div>
+              <div className="text-2xl text-[#A1A1A1]">{">"}</div>
+            </div>
+            <div className="bg-[#A1A1A1] h-[2px] mt-2"></div>
+          </a>
+          <a href="https://iitrdora.iitr.ac.in/donors/csr.php" target="_blank" rel="noopener noreferrer">
+            <div className="flex justify-between">
+              <div className="md:text-lg text-base text-[#183059]">CSR Contribution</div>
+              <div className="text-2xl text-[#A1A1A1]">{">"}</div>
+            </div>
+            <div className="bg-[#A1A1A1] h-[2px] mt-2"></div>
+          </a>
+          <a href="http://localhost:3000/uploads/Tax_Exemption.pdf" target="_blank" rel="noopener noreferrer">
+            <div className="flex justify-between">
+              <div className="md:text-lg text-base text-[#183059]">Tax Exemption</div>
+              <div className="text-2xl text-[#A1A1A1]">{">"}</div>
+            </div>
+            <div className="bg-[#A1A1A1] h-[2px] mt-2"></div>
+          </a>
+          <a href="https://iitrdora.iitr.ac.in/donors/Avenues.php">
+            <div className="flex justify-between">
+              <div className="md:text-lg text-base text-[#183059]">Avenues for Alumni</div>
+              <div className="text-2xl text-[#A1A1A1]">{">"}</div>
+            </div>
+            <div className="bg-[#A1A1A1] h-[2px] mt-2"></div>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+      <div className="[min-height:388px] bg-[#223551] text-white font-poppins md:px-12 py-6">
         <div>
-          <div className="text-4xl font-extrabold">BENEFITS</div>
-          <div className="bg-white [height:3px] w-40"></div>
+          <div className="md:text-4xl text-2xl font-extrabold flex justify-center md:justify-start">BENEFITS</div>
+          <div className="bg-white [height:3px] mb-5 w-40 flex mx-auto md:mx-0  md:justify-start md:mb-0"></div>
         </div>
-        <div className="mt-4 text-wrap">
+        <div className="mt-4 text-wrap flex flex-col  md:flex-row-reverse">
           <img
-            className="w-1/3 h-auto ml-4 mb-4 mt-2 float-right"
+            className="md:w-1/3 w-3/2 h-auto mx-auto  md:ml-4 mb-4 mt-2 px-14 "
             src={BenefitsImage}
             alt=""
           />
-          <p className="ml-4 text-lg text-justify">
+          <p className="md:ml-4 md:text-[20px] md:px-0 px-[22px] text-[12px] text-justify   md:text-justify md:mr-[3vw] break-words "  style={{lineHeight:"2rem"}}>
             "All the donations made to IIT Roorkee are 100% deductible from
             total taxable income u/s 80G of the Income Tax Act 1961 and may be
             used to support a wide variety of schemes. The options to choose
@@ -149,8 +146,8 @@ const GivingBack = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 justify-center items-center [min-height:336px] bg-[#223551] text-white font-poppins px-16 py-6">
-        <div className="text-lg text-justify">
+      <div className="flex flex-col gap-8 justify-center items-center [min-height:336px] bg-[#223551] text-white font-poppins px-6  md:px-16 py-6 " >
+        <div className="md:text-xl text-[12px] text-justify md:text-center" style={{lineHeight:"2rem"}}>
           Convenience of the donors is taken care of at each step, with multiple
           payment options including provision for online donations , demand
           drafts and feature of installments for donations above INR 10 Lacs.
@@ -159,10 +156,10 @@ const GivingBack = () => {
           amount, interest earned, expenditure, and balance amount of their
           donation. Institute also conveys the information of the list of
           beneficiaries through
-          <div className="text-center">email to keep the donors updated.</div>
+         email to keep the donors updated.
         </div>
 
-        <div className="text-lg">
+        <div className=" md:text-lg text-[14px] ">
           To donate please visit{" "}
           <a className="underline" href="">
             here
