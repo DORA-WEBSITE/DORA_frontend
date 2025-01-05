@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
-import mainbuilding from "../assets/images/mainbuilding .png";
-import design from "../assets/images/design.png";
-import person1 from "../assets/images/person1.png";
-import person2 from "../assets/images/person2.png";
-import Givingback from "../components/Givingback";
-import thompson from "../assets/images/thompson.png";
-import Linksbox from "../components/Linksbox";
-import Testimonial from "../components/Testimonial";
-import HomeSlider from "../components/HomeSlider";
-import Donars from "../components/Donars";
+import  { useState, useEffect } from 'react';
+import Slider from 'react-slick';
+import mainbuilding from '../assets/images/mainbuilding .png'
+import design from '../assets/images/design.png';
+import person1 from '../assets/images/person1.png';
+import person2 from '../assets/images/person2.png';
+import Givingback from '../components/Givingback';
+import thompson from '../assets/images/thompson.png';
+import Linksbox from '../components/Linksbox';
+import Testimonial from '../components/Testimonial';
+import HomeSlider from '../components/HomeSlider';
+import Donars from '../components/Donars';
 
 const Home = () => {
   const [Events, setEvents] = useState([]);
