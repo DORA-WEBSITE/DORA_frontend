@@ -93,8 +93,8 @@ const data2 = [
 
 const Linksbox = () => {
     return (
-        <div className='flex justify-evenly mt-[71px] flex-wrap gap-5'>
-            <div className='flex flex-col w-[35.5vw] max-w-[670px] min-h-[572px] bg-white shadow-lg justify-evenly items-center min-w-[350px]'>
+        <div className='flex justify-evenly md:mt-[71px] flex-wrap gap-5'>
+            <div className='flex flex-col w-[35.5vw] max-w-[670px] md:min-h-[572px] gap-2 py-4 md:gap-0 md:py-0 bg-white shadow-lg justify-evenly items-center min-w-[300px]'>
 
                 {
                     data1.map((data) => {
@@ -104,7 +104,7 @@ const Linksbox = () => {
 
             </div>
 
-            <div className='flex flex-col w-[35.5vw] max-w-[670px] min-h-[572px] bg-white shadow-lg gap-[1.8vw] py-[50px] min-w-[350px]'>
+            <div className='flex flex-col w-[35.5vw] max-w-[670px] md:min-h-[572px] bg-white shadow-lg gap-[1.8vw] py-[24px] md:py-[50px] min-w-[300px]'>
 
             {
                     data2.map((data) => {
