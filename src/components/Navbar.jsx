@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
       <ul
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } absolute top-[30px] left-0 w-full bg-[#183059] lg:flex lg:static lg:flex-row lg:gap-[10px] lg:items-center lg:bg-transparent list-none`}
+        } absolute top-[30px] left-0 w-full bg-[#183059] lg:flex lg:static lg:flex-row lg:justify-center lg:gap-[10px] lg:items-center lg:bg-transparent list-none`}
       >
         <li className="nav-item">
           <a
