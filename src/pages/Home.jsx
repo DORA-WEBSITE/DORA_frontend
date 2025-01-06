@@ -126,17 +126,17 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-col bg-[#F2F1F1] justify-center w-full min-h-[520px] mt-[32px] md:mt-[150px] shadow-inner gap-20 py-4 md:py-8 z-[10] relative">
-        <h1 className="font-[700] text-[36px] md:text-[66px] leading-[25px] text-[#BFBFBF] heading-font text-center">
+      <div className="flex flex-col bg-[#F2F1F1] justify-center w-full md:min-h-[520px] mt-[32px] md:mt-[150px] shadow-inner gap-2 md:gap-20 py-4 md:py-8 z-[10] relative">
+        <h1 className="font-[700] text-[36px] md:text-[66px] md:leading-[25px] text-[#BFBFBF] heading-font text-center">
           Events
         </h1>
 
-        <Slider {...settings} className="max-w-5xl mx-auto">
+        <Slider {...settings} className="max-w-2xl md:max-w-5xl mx-auto">
           {Events?.length > 0 ? (
             Events.map((Event) => (
               <div
                 key={Event.id || Event._id || Math.random()} // Ensure a unique key
-                className="w-[90%] md:w-[22%] min-h-[246.59px] max-w-[220px] border bg-white shadow-lg flex flex-col items-center p-5"
+                className="w-[90%] md:w-[22%] min-h-[172px] max-w-[144px] md:min-h-[246.59px] md:max-w-[220px] border bg-white shadow-lg flex flex-col items-center p-5"
               >
                 <h2 className="text-[#183059] text-[20px] font-medium">
                   {Event?.duration || "Unknown Duration"}
@@ -159,7 +159,7 @@ const Home = () => {
         <Givingback />
       </div>
 
-      <div className="mt-[32px] md:mt-[121px] bg-[#F2F1F1] flex flex-col md:justify-around w-full min-h-[550px] py-4 md:py-8">
+      <div className="mt-[32px] md:mt-[121px] bg-[#F2F1F1] flex flex-col md:justify-around w-full md:min-h-[550px] py-4 md:py-8">
         <h1 className="font-[700] text-[36px] md:text-[66px] leading-[25px] text-[#BFBFBF] heading-font text-center">
           Top Donars
         </h1>
