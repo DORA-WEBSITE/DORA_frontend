@@ -26,7 +26,7 @@ const TeamCard = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center min-h-screen w-[100mx-auto">
+    <div className="flex justify-center items-center  w-[100%] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 p-4 w-full max-w-screen-lg">
         {DoraTeamData.length > 0 ? (
           DoraTeamData.map((data) => (

@@ -45,10 +45,10 @@ const Dora_Office = () => {
       </div>
 
       {/* DORA Details Section */}
-      <div className="flex flex-col my-10 lg:mx-40 mx-6 md:mx-16">
+      <div className="flex flex-col md:mb-10 mt-10 lg:mx-40 mx-6 md:mx-16 md:mt-10">
         {DoraData.length > 0 ? (
           DoraData.map((data) => (
-            <div key={data.name} className="flex flex-col md:flex-row w-full gap-10 md:gap-20">
+            <div key={data.name} className="flex flex-col md:flex-row w-full gap-10 md:gap-20 ">
               <div className="relative mt-8 md:mt-16 flex justify-center md:block">
                 <img
                   className="h-[200px] md:h-[320px] w-[160px] md:w-[260px]"
@@ -56,7 +56,7 @@ const Dora_Office = () => {
                   alt={data.name}
                 />
               </div>
-              <div className="flex flex-col justify-center pb-8 md:pb-16 text-center md:text-left px-4 md:px-0">
+              <div className="flex flex-col justify-center pb-8 md:pb-16 text-center md:text-left px-4 md:px-0 ">
                 <div className="text-[#003B71] font-semibold text-lg sm:text-xl md:text-2xl">
                   {data.name}
                 </div>
@@ -88,7 +88,7 @@ const Dora_Office = () => {
 
         {/* About DORA Section */}
         {DoraData.length > 0 && (
-          <div className="bg-[#E6E6E6] flex flex-col px-20 rounded-sm -translate-y-24 -z-10 pt-28 pb-10">
+          <div className="bg-[#E6E6E6] flex flex-col md:px-20 px-6 rounded-sm -translate-y-24 -z-10 pt-[38px] md:pt-28 pb-10 mt-[80px] md:text-left text-justify ">
             <div className="text-[#003B71] text-2xl md:text-3xl font-bold my-4 md:my-7 text-center md:text-left md:ml-32">
               About DORA
             </div>
