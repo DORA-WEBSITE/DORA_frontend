@@ -47,7 +47,7 @@ const DAAAndDYAA2019 = () => {
   ];
 
   return (
-    <div className="p-8 bg-gray-50 mt-[100px]">
+    <div className="p-8 bg-gray-50 mt-[70px] md:mt-[100px] lg:mt-[100px]">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
         DAA & DYAA 2019
       </h1>

@@ -53,7 +53,7 @@ const DAA2018 = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8 mt-[150px]">
+    <div className="container mx-auto px-4 py-8 mt-[80px] md:mt-[150px] lg:mt-[150px]">
       <h1 className="text-2xl font-bold text-center mb-6">
         Distinguished Alumnus Award (DAA) 2018
       </h1>

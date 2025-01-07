@@ -23,13 +23,13 @@ const Events = () => {
 }, []);
 
   return (
-    <div className="bg-gray-50 p-6 rounded-lg shadow-lg mt-[150px]">
+    <div className="bg-gray-50 p-6 rounded-lg shadow-lg mt-[100px] md:mt-[150px] lg:mt-[150px]">
       <h1 className="text-2xl font-bold text-center mb-6">Events</h1>
       <div className="space-y-6">
         {Events.map((event) => (
           <div
             key={event._id}
-            className="flex items-start space-x-4 bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            className="flex flex-col sm:flex-row md:flex-row lg:flex-row items-start space-x-4 bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow"
           >
             <svg
               height="20"
