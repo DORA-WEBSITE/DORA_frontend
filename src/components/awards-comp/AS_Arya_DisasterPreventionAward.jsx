@@ -3,7 +3,7 @@ import arrow from "../../assets/images/arrow.png";
 
 const AS_Arya_DisasterPreventionAward = () => {
   return (
-    <div className="p-6 bg-gray-50 rounded-lg shadow-md mt-[150px]">
+    <div className="p-6 bg-gray-50 rounded-lg shadow-md mt-[70px] md:mt-[150px] lg:mt-[150px]">
       <h1 className="text-2xl font-bold text-gray-800 mb-4">
         A.S. Arya-IITR Disaster Prevention Award
       </h1>

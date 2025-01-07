@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsOutreach = () => {
   return (
-    <div className="bg-white p-8 rounded-xl shadow-lg max-w-3xl mx-auto mt-[150px] mb-5">
+    <div className="bg-white p-8 rounded-xl shadow-lg max-w-3xl mx-auto mt-[100px] md:mt-[150px] lg:mt-[150px] mb-5">
     {/* Header */}
     <div className="text-center mb-8">
       <h1 className="text-3xl font-extrabold text-blue-700">News & Outreach</h1>
