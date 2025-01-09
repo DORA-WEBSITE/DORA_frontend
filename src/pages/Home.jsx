@@ -49,8 +49,8 @@ const Home = () => {
     arrows: true,
   };
   return (
-    <div className="overflow-hidden">
-      <div className="flex flex-col relative justify-center items-center mt-[54px]">
+    <div className="overflow-hidden ">
+      <div className="flex flex-col relative justify-center items-center mt-[140px] md:mt-[54px]">
         {/* <div className='flex flex-col relative justify-center items-center h-screen'> */}
 
         <img
@@ -75,7 +75,7 @@ const Home = () => {
       </div>
       <div className='-mt-[90px]'><HomeSlider2 /></div>
 
-      <div className="flex flex-col md:flex-row relative justify-between flex-wrap w-[100vw] -mt-[340px]">
+      <div className="flex flex-col md:flex-row relative justify-between flex-wrap w-[100vw] md:-mt-[340px] -mt-[235px]">
         <div className="flex flex-col gap-4 relative md:static mt-[236px] md:mt-[420px] w-[55%] md:px-[7%] min-w-[500px] z-10 max-w-[1000px]">
           <div className="md:hidden relative bg-[#E2E2E270] w-[100vw]">
             <div className="absolute -z-20 right-[0] w-[60%] max-w-[1280px]">

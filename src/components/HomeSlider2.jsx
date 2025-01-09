@@ -32,7 +32,7 @@ const HomeSlider2 = () => {
   }, [currentIndex]);
 
   return (
-    <div id="centered" className="relative w-full h-[500px] overflow-hidden">
+    <div id="centered" className="relative w-full md:h-[500px] h-[300px] overflow-hidden">
       {/* Carousel Container */}
       <div className="carousel relative flex justify-center items-center h-full">
         {slides.map((slide, index) => {
@@ -45,7 +45,7 @@ const HomeSlider2 = () => {
               key={slide.id}
               className={`absolute transition-all duration-500 ease-in-out ${
                 isActive
-                  ? "h-[600px] w-9/12 z-10 scale-105 opacity-100"
+                  ? "md:h-[600px] h-[300px] w-10/12 md:w-9/12 z-10 scale-105 opacity-100"
                   : isPrev || isNext
                   ? "h-80 w-8/12 z-5 scale-95 opacity-75"
                   : "h-64 w-6/12 z-0 scale-90 opacity-50"
