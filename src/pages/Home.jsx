@@ -10,6 +10,7 @@ import Linksbox from '../components/Linksbox';
 import Testimonial from '../components/Testimonial';
 import HomeSlider from '../components/HomeSlider';
 import Donars from '../components/Donars';
+import HomeSlider2 from '../components/HomeSlider2';
 
 const Home = () => {
   const [Events, setEvents] = useState([]);
@@ -67,12 +68,14 @@ const Home = () => {
           </span>
         </div>
 
-        <div className="absolute top-[4px] md:top-[390px] lg:top-[504px]">
-          <HomeSlider />
-        </div>
+        {/* <div className="absolute top-[4px] md:top-[390px] lg:top-[504px]"> */}
+          {/* <HomeSlider /> */}
+          
+        {/* </div> */}
       </div>
+      <div className='-mt-[90px]'><HomeSlider2 /></div>
 
-      <div className="flex flex-col md:flex-row relative justify-between flex-wrap w-[100vw]">
+      <div className="flex flex-col md:flex-row relative justify-between flex-wrap w-[100vw] -mt-[340px]">
         <div className="flex flex-col gap-4 relative md:static mt-[236px] md:mt-[420px] w-[55%] md:px-[7%] min-w-[500px] z-10 max-w-[1000px]">
           <div className="md:hidden relative bg-[#E2E2E270] w-[100vw]">
             <div className="absolute -z-20 right-[0] w-[60%] max-w-[1280px]">
